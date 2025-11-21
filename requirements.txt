@@ -13,3 +13,4 @@ exa-py
 tavily-python
 plotly
 nbformat
+oxylabs-ai-studio

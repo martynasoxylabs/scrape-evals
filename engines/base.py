@@ -38,6 +38,9 @@ class ScrapeResult(TypedDict, total=False):
         # Tavily
         "tavily_api",
 
+        # Oxylabs AI Scraper
+        "oxylabs_ai_scraper",
+
         # Zyte
         "zyte_api",
     ]

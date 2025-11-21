@@ -8,21 +8,22 @@ This framework supports APIs for Firecrawl, Apify, ScraperAPI, ScrapingBee, Zyte
 
 Below are evaluation results across different engines.
 
-| Engine	        | Coverage (Success Rate) (%)	| Quality (F1) |
-|-----------------|-----------------------------|--------------|
-| Firecrawl	      | 80.9	                      | 0.68         |
-| Exa	            | 76.3	                      | 0.53         |
-| Tavily	        | 67.6	                      | 0.50         |
-| ScraperAPI	    | 63.5	                      | 0.45         |
-| Zyte	          | 62.9	                      | 0.47         |
-| ScrapingBee	    | 60.6	                      | 0.45         |
-| Apify	          | 60.2	                      | 0.42         |
-| Crawl4ai	      | 58.0	                      | 0.45         |
-| Selenium	      | 55.0	                      | 0.40         |
-| Scrapy	        | 54.0	                      | 0.43         |
-| Puppeteer	      | 53.7	                      | 0.41         |
-| Rest (requests)	| 50.6	                      | 0.36         |
-| Playwright	    | 39.5	                      | 0.34         |
+| Engine	          | Coverage (Success Rate) (%)	| Quality (F1) |
+|-------------------|-----------------------------|--------------|
+| Firecrawl	        | 80.9	                      | 0.68         |
+| Oxylabs AI Studio | 80.9	                      | 0.61         |
+| Exa	              | 76.3	                      | 0.53         |
+| Tavily	          | 67.6	                      | 0.50         |
+| ScraperAPI	      | 63.5	                      | 0.45         |
+| Zyte	            | 62.9	                      | 0.47         |
+| ScrapingBee	      | 60.6	                      | 0.45         |
+| Apify	            | 60.2	                      | 0.42         |
+| Crawl4ai	        | 58.0	                      | 0.45         |
+| Selenium	        | 55.0	                      | 0.40         |
+| Scrapy	          | 54.0	                      | 0.43         |
+| Puppeteer	        | 53.7	                      | 0.41         |
+| Rest (requests)	  | 50.6	                      | 0.36         |
+| Playwright	      | 39.5	                      | 0.34         |
 
 ## Install
 
