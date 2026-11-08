@@ -11,6 +11,9 @@ class ScrapeResult(TypedDict, total=False):
         # Firecrawl
         "firecrawl_api",
 
+        # Hermes /crawl
+        "crawl_engine",
+
         # Exa
         "exa_api",
 
