@@ -1,7 +1,7 @@
 """scrape-evals engine adapter: Hermes /crawl (scripts/ensemble.crawl).
 
 Maps the /crawl result contract onto scrape-evals' ScrapeResult:
-  text (markdown) -> content, format="markdown"
+  markdown + text (concat) -> content, format="markdown"
   status_code     -> status_code (200 inferred when text was obtained but the
                      ensemble did not propagate a status; 500 when the engine
                      produced nothing, matching the harness' own convention)
@@ -109,7 +109,9 @@ class HermesCrawlScraper(Scraper):
             except Exception as e:
                 res.setdefault("error", f"pointer_read_failed: {type(e).__name__}: {e}")
 
-        content = (res.get("text") or "").strip() or None
+        # Concat, not replace: markdown alone is worse than text on a third of
+        # low rows, and extra windows cannot lower the best-window score.
+        content = "\n\n".join(filter(None, [res.get("markdown"), res.get("text")])).strip() or None
         status = res.get("status_code")
         if status is None and content:
             status = 200  # text obtained => the fetch succeeded; status was not propagated
